@@ -1,0 +1,2698 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description"
+    content="Maanavta Hitaay Seva Chatra Old Age Home, Pradhikaran, Nigdi, Pimpri-Chinchwad, Pune.">
+  <title>Maanavta Hitaay Seva Chatra | Care with Dignity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --forest: #245846;
+      --forest2: #183f32;
+      --sage: #dfece4;
+      --mint: #f2f7f3;
+      --sun: #e7ad4b;
+      --coral: #c96f52;
+      --ink: #20362d;
+      --muted: #6d7d73;
+      --paper: #fffefa;
+      --line: #dfe7df;
+      --shadow: 0 18px 48px rgba(29, 65, 49, .10)
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "DM Sans", Arial, sans-serif;
+      line-height: 1.6
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit
+    }
+
+    button {
+      cursor: pointer
+    }
+
+    .top-ribbon {
+      background: #edf5ef;
+      color: var(--forest);
+      text-align: center;
+      font-size: 10px;
+      padding: 8px 14px;
+      border-bottom: 1px solid #d6e5d9;
+      letter-spacing: .04em
+    }
+
+    .top-ribbon a {
+      text-decoration: underline;
+      font-weight: 700
+    }
+
+    .topbar {
+      height: 82px;
+      padding: 0 clamp(18px, 5vw, 76px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(255, 254, 250, .96);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 30
+    }
+
+    .identity {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      min-width: max-content
+    }
+
+    .seal {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: var(--forest);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font: 22px Georgia, serif;
+      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, .09)
+    }
+
+    .identity strong {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: -.025em
+    }
+
+    .identity small {
+      display: block;
+      color: var(--muted);
+      font-size: 9px;
+      letter-spacing: .12em;
+      text-transform: uppercase
+    }
+
+    .topbar nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 12px
+    }
+
+    .topbar nav>a {
+      color: #4e6559
+    }
+
+    .topbar nav>a:hover {
+      color: var(--coral)
+    }
+
+    .owner-button {
+      border: 0;
+      border-radius: 999px;
+      background: var(--forest);
+      color: white;
+      padding: 11px 17px;
+      font-size: 11px;
+      font-weight: 700;
+      box-shadow: 0 5px 12px rgba(36, 88, 70, .13)
+    }
+
+    .nav-mobile {
+      display: none;
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 999px;
+      padding: 8px 13px;
+      color: var(--forest)
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr .95fr;
+      gap: 7vw;
+      align-items: center;
+      max-width: 1440px;
+      margin: auto;
+      padding: clamp(54px, 7vw, 100px) clamp(18px, 5vw, 76px) 80px
+    }
+
+    .kicker {
+      color: #b96d39;
+      font-weight: 700;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .16em
+    }
+
+    .hero h1,
+    .section h2,
+    .support h2,
+    .login-card h2 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: clamp(52px, 6.1vw, 90px);
+      font-weight: 500;
+      line-height: 1.03;
+      letter-spacing: -.045em;
+      margin: 20px 0 22px
+    }
+
+    .hero h1 em,
+    .section h2 em,
+    .support h2 em,
+    .login-card h2 em {
+      color: var(--coral);
+      font-style: normal
+    }
+
+    .hero-text {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--muted);
+      max-width: 620px
+    }
+
+    .actions {
+      display: flex;
+      gap: 11px;
+      flex-wrap: wrap;
+      margin-top: 28px
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+      border-radius: 12px;
+      padding: 13px 17px;
+      border: 1px solid var(--line);
+      font-size: 11px;
+      font-weight: 700;
+      transition: transform .18s, background .18s
+    }
+
+    .btn:hover {
+      transform: translateY(-1px)
+    }
+
+    .btn.dark {
+      background: var(--forest);
+      color: white;
+      border-color: var(--forest)
+    }
+
+    .btn.dark:hover {
+      background: var(--forest2)
+    }
+
+    .btn.light {
+      background: white;
+      color: var(--forest);
+      border-color: #cadacf
+    }
+
+    .btn.light:hover {
+      background: var(--mint)
+    }
+
+    .source-note {
+      font-size: 10px;
+      color: #8a968e;
+      line-height: 1.6;
+      max-width: 600px;
+      margin-top: 23px
+    }
+
+    .hero-visual {
+      position: relative;
+      min-width: 0;
+      padding: 0 0 24px 20px
+    }
+
+    .hero-photo {
+      height: min(620px, 60vw);
+      min-height: 430px;
+      position: relative;
+      border-radius: 160px 160px 20px 20px;
+      overflow: hidden;
+      background: #d9e6db;
+      border: 9px solid #edf4ee;
+      box-shadow: var(--shadow)
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(.83)
+    }
+
+    .hero-photo:after {
+      content: "";
+      position: absolute;
+      inset: 35% 0 0;
+      background: linear-gradient(180deg, transparent, rgba(17, 48, 36, .47))
+    }
+
+    .image-caption {
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+      background: rgba(255, 254, 250, .94);
+      color: var(--forest);
+      font-size: 9px;
+      padding: 10px 13px;
+      border-radius: 8px;
+      z-index: 2
+    }
+
+    .float-card {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: #fff;
+      border: 1px solid var(--line);
+      padding: 16px 20px;
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+      min-width: 185px
+    }
+
+    .float-card span,
+    .float-card small {
+      display: block;
+      color: var(--muted);
+      font-size: 9px;
+      letter-spacing: .1em;
+      text-transform: uppercase
+    }
+
+    .float-card strong {
+      display: block;
+      font: 25px Fraunces, Georgia, serif;
+      margin: 6px 0
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background: var(--forest);
+      color: #fff;
+      padding: 0 clamp(18px, 5vw, 76px)
+    }
+
+    .stats article {
+      padding: 27px clamp(10px, 2.3vw, 30px);
+      border-right: 1px solid rgba(255, 255, 255, .15)
+    }
+
+    .stats article:last-child {
+      border-right: 0
+    }
+
+    .stats b {
+      font: 43px/1 Fraunces, Georgia, serif;
+      display: block
+    }
+
+    .stats span {
+      display: block;
+      margin-top: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase
+    }
+
+    .stats small {
+      display: block;
+      font-size: 9px;
+      color: #bfd3c5;
+      margin-top: 6px;
+      line-height: 1.5
+    }
+
+    .section {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 6vw;
+      max-width: 1440px;
+      margin: auto;
+      padding: 100px clamp(18px, 5vw, 76px)
+    }
+
+    .section-index {
+      font-size: 10px;
+      letter-spacing: .15em;
+      color: var(--coral);
+      font-weight: 700
+    }
+
+    .split-title {
+      display: grid;
+      grid-template-columns: 1.1fr .75fr;
+      gap: 4vw;
+      align-items: center
+    }
+
+    .section h2 {
+      font-size: clamp(44px, 5.1vw, 72px);
+      margin: 0 0 20px
+    }
+
+    .split-title>p,
+    .section-heading>p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+      max-width: 600px
+    }
+
+    .quote {
+      margin: 46px 0 32px;
+      background: var(--mint);
+      border-left: 4px solid var(--sun);
+      padding: 24px 28px;
+      font: 29px Fraunces, Georgia, serif;
+      border-radius: 0 16px 16px 0
+    }
+
+    .quote small {
+      display: block;
+      font: 9px "DM Sans", sans-serif;
+      color: var(--muted);
+      margin-top: 7px
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px
+    }
+
+    .about-grid article {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      padding: 18px
+    }
+
+    .about-grid span {
+      font-size: 9px;
+      color: #b96d39;
+      text-transform: uppercase;
+      letter-spacing: .13em;
+      font-weight: 700
+    }
+
+    .about-grid p {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 0
+    }
+
+    .care {
+      background: #f2f7f3;
+      max-width: none
+    }
+
+    .section-main {
+      min-width: 0
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 45px;
+      align-items: end
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 38px
+    }
+
+    .service {
+      background: white;
+      border: 1px solid #dfe8e0;
+      border-radius: 18px;
+      padding: 23px;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 5px 18px rgba(29, 65, 49, .025);
+      transition: transform .2s, box-shadow .2s
+    }
+
+    .service:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow)
+    }
+
+    .service.featured {
+      background: var(--forest);
+      color: white;
+      border-color: var(--forest)
+    }
+
+    .service .num {
+      width: 31px;
+      height: 31px;
+      background: #f7e9d2;
+      color: #99622d;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      font-size: 9px;
+      font-weight: 700
+    }
+
+    .service.featured .num {
+      background: #456f5b;
+      color: #fff
+    }
+
+    .service h3 {
+      font: 25px Fraunces, Georgia, serif;
+      margin: 20px 0 7px
+    }
+
+    .service p {
+      font-size: 12px;
+      color: var(--muted);
+      margin: 0 0 15px
+    }
+
+    .service.featured p {
+      color: #d4e2d9
+    }
+
+    .service a {
+      margin-top: auto;
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--forest)
+    }
+
+    .service.featured a {
+      color: #f3d5a4
+    }
+
+    .feature-strip {
+      margin-top: 16px;
+      padding: 18px 20px;
+      background: #e4eee6;
+      border-radius: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px
+    }
+
+    .feature-strip div {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      font-size: 10px
+    }
+
+    .feature-strip b {
+      color: var(--forest)
+    }
+
+    .feature-strip small {
+      font-size: 9px;
+      color: var(--muted);
+      max-width: 330px
+    }
+
+    .process {
+      background: #fff;
+      max-width: none
+    }
+
+    .timeline {
+      margin-top: 38px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px
+    }
+
+    .timeline article {
+      background: #f8faf7;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      padding: 18px;
+      min-height: 190px
+    }
+
+    .timeline i {
+      font-style: normal;
+      background: #f5e7d0;
+      color: #925c28;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      width: 32px;
+      height: 32px;
+      font-size: 10px;
+      font-weight: 700
+    }
+
+    .timeline h3 {
+      font: 21px Fraunces, Georgia, serif;
+      margin: 21px 0 8px
+    }
+
+    .timeline p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.7
+    }
+
+    .director {
+      background: #f6efe4;
+      max-width: none
+    }
+
+    .leadership {
+      display: grid;
+      grid-template-columns: .52fr 1fr;
+      gap: 7vw;
+      align-items: center
+    }
+
+    .portrait-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: var(--shadow)
+    }
+
+    .initial {
+      width: 62px;
+      height: 62px;
+      border-radius: 16px;
+      background: #dcebe0;
+      color: var(--forest);
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: .04em
+    }
+
+    .portrait-green {
+      width: 135px;
+      height: 135px;
+      border-radius: 24px;
+      background: #e0ebdf;
+      color: var(--forest);
+      font: 34px Fraunces, Georgia, serif;
+      margin-bottom: 56px
+    }
+
+    .portrait-card span {
+      display: block;
+      color: var(--coral);
+      font-size: 9px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-weight: 700
+    }
+
+    .portrait-card strong {
+      display: block;
+      font: 26px Fraunces, Georgia, serif;
+      margin: 7px 0
+    }
+
+    .portrait-card small {
+      color: var(--muted);
+      font-size: 10px
+    }
+
+    .director-copy h2 {
+      margin-top: 15px
+    }
+
+    .director-copy p {
+      color: var(--muted);
+      max-width: 650px;
+      font-size: 13px
+    }
+
+    .team-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 36px
+    }
+
+    .team-list article {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      padding: 17px
+    }
+
+    .team-list .initial {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      margin-bottom: 13px;
+      font-size: 10px
+    }
+
+    .team-list b {
+      display: block;
+      font-size: 12px
+    }
+
+    .team-list span {
+      display: block;
+      color: var(--muted);
+      font-size: 10px;
+      margin-top: 5px
+    }
+
+    .recognition {
+      background: #fff;
+      max-width: none
+    }
+
+    .award-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 34px
+    }
+
+    .award-grid span {
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: #fbfcf9;
+      padding: 16px 18px;
+      font: 18px Fraunces, Georgia, serif
+    }
+
+    .support {
+      display: grid;
+      grid-template-columns: 1fr .72fr;
+      gap: 9vw;
+      align-items: center;
+      padding: 90px clamp(18px, 9vw, 150px);
+      background: #dcebe0
+    }
+
+    .support h2 {
+      font-size: clamp(47px, 5.4vw, 76px)
+    }
+
+    .support h2 em {
+      color: var(--coral)
+    }
+
+    .support-copy p {
+      color: #5e7667;
+      max-width: 650px;
+      font-size: 13px
+    }
+
+    .donation-card {
+      background: var(--forest);
+      color: white;
+      border-radius: 21px;
+      padding: 27px;
+      box-shadow: var(--shadow)
+    }
+
+    .donation-card small {
+      color: #c2d7ca;
+      font-size: 9px;
+      letter-spacing: .13em
+    }
+
+    .donation-card strong {
+      display: block;
+      font: 27px Fraunces, Georgia, serif;
+      margin: 10px 0 22px;
+      overflow-wrap: anywhere
+    }
+
+    .donation-row {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap
+    }
+
+    .donation-row button,
+    .donation-row a {
+      border: 1px solid rgba(255, 255, 255, .35);
+      background: transparent;
+      color: #fff;
+      padding: 10px 12px;
+      border-radius: 10px;
+      font-size: 10px
+    }
+
+    .suggested {
+      display: flex;
+      gap: 7px;
+      margin-top: 21px;
+      flex-wrap: wrap
+    }
+
+    .suggested span {
+      background: #376951;
+      border-radius: 7px;
+      padding: 7px 10px;
+      font-size: 10px
+    }
+
+    .tiny {
+      display: block;
+      margin-top: 12px
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr .8fr;
+      gap: 7vw;
+      align-items: start
+    }
+
+    .contact-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 25px
+    }
+
+    .address-card {
+      background: #f2f7f3;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 23px
+    }
+
+    .address-card article {
+      padding: 13px 0;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .address-card article:last-of-type {
+      border: 0
+    }
+
+    .address-card span {
+      display: block;
+      color: var(--coral);
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-weight: 700
+    }
+
+    .address-card strong {
+      display: block;
+      margin-top: 5px;
+      font-size: 12px;
+      overflow-wrap: anywhere
+    }
+
+    .address-card small {
+      display: block;
+      color: var(--muted);
+      font-size: 9px;
+      margin-top: 14px
+    }
+
+    .gallery {
+      background: #fff;
+      max-width: none
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .75fr .75fr;
+      gap: 13px;
+      margin-top: 36px
+    }
+
+    .gallery-grid figure {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      background: #fafbf8
+    }
+
+    .gallery-grid figure img {
+      display: block;
+      width: 100%;
+      height: 310px;
+      object-fit: cover;
+      filter: saturate(.8)
+    }
+
+    .gallery-grid figure.large img {
+      height: 410px
+    }
+
+    .gallery-grid figcaption {
+      padding: 10px 12px;
+      font-size: 9px;
+      color: var(--muted)
+    }
+
+    .official-photo {
+      border-radius: 16px;
+      padding: 25px;
+      background: #e3efe6;
+      color: var(--forest);
+      display: flex;
+      flex-direction: column;
+      justify-content: end
+    }
+
+    .official-photo strong {
+      font: 26px/1.2 Fraunces, Georgia, serif
+    }
+
+    .official-photo p {
+      color: #5e7667;
+      font-size: 12px
+    }
+
+    .official-photo a {
+      font-size: 10px;
+      font-weight: 700;
+      text-decoration: underline
+    }
+
+    .faq {
+      background: #f7f5ee;
+      max-width: none
+    }
+
+    .faq-list {
+      border-top: 1px solid var(--line);
+      margin-top: 18px
+    }
+
+    .faq-list details {
+      border-bottom: 1px solid var(--line);
+      padding: 18px 0
+    }
+
+    .faq-list summary {
+      cursor: pointer;
+      font: 21px Fraunces, Georgia, serif
+    }
+
+    .faq-list summary::marker {
+      color: var(--coral)
+    }
+
+    .faq-list p {
+      color: var(--muted);
+      max-width: 760px;
+      font-size: 12px
+    }
+
+    footer {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 20px;
+      padding: 28px clamp(18px, 5vw, 76px);
+      border-top: 1px solid var(--line);
+      background: #fffefa
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      font-size: 10px;
+      flex-wrap: wrap
+    }
+
+    .footer-links button {
+      border: 0;
+      background: var(--forest);
+      color: white;
+      border-radius: 999px;
+      padding: 9px 13px;
+      font-size: 10px
+    }
+
+    .footer-links a:hover {
+      color: var(--coral)
+    }
+
+    footer>p {
+      grid-column: 1/-1;
+      font-size: 9px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 15px;
+      margin: 0
+    }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 80;
+      background: rgba(22, 47, 36, .57);
+      backdrop-filter: blur(8px);
+      display: grid;
+      place-items: center;
+      padding: 18px
+    }
+
+    .login-card {
+      position: relative;
+      background: #fffefa;
+      border-radius: 23px;
+      border: 1px solid var(--line);
+      max-width: 520px;
+      width: 100%;
+      padding: 39px;
+      box-shadow: 0 25px 80px rgba(15, 42, 29, .22)
+    }
+
+    .login-card h2 {
+      font-size: 48px;
+      margin: 17px 0
+    }
+
+    .login-card>p {
+      color: var(--muted);
+      font-size: 12px
+    }
+
+    .login-card label {
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--muted);
+      font-size: 9px;
+      margin: 17px 0
+    }
+
+    .login-card input,
+    .field input,
+    .field textarea,
+    .field select {
+      display: block;
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: white;
+      padding: 12px;
+      margin-top: 7px;
+      outline: none;
+      color: var(--ink)
+    }
+
+    .login-card input:focus,
+    .field input:focus,
+    .field textarea:focus {
+      border-color: var(--forest);
+      box-shadow: 0 0 0 3px #e5efe7
+    }
+
+    .login-card>small {
+      display: block;
+      color: var(--muted);
+      font-size: 9px;
+      margin-top: 14px
+    }
+
+    .modal-x {
+      position: absolute;
+      right: 16px;
+      top: 11px;
+      border: 0;
+      background: none;
+      color: var(--muted);
+      font-size: 27px
+    }
+
+    .workspace {
+      position: fixed;
+      inset: 0;
+      background: #fffefa;
+      z-index: 70;
+      display: grid;
+      grid-template-columns: 245px 1fr
+    }
+
+    .workspace-side {
+      background: #edf5ef;
+      color: var(--forest);
+      padding: 22px 15px;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid #d9e7dc
+    }
+
+    .ws-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+      margin-bottom: 35px
+    }
+
+    .ws-brand .seal {
+      width: 37px;
+      height: 37px;
+      border-radius: 12px
+    }
+
+    .ws-brand small {
+      color: var(--muted)
+    }
+
+    .ws-brand button {
+      display: none;
+      position: absolute;
+      right: 0;
+      background: none;
+      color: var(--forest);
+      border: 0;
+      font-size: 25px
+    }
+
+    .workspace-side nav {
+      display: grid;
+      gap: 5px
+    }
+
+    .workspace-side nav button,
+    .ws-bottom button {
+      border: 0;
+      background: transparent;
+      color: #587466;
+      text-align: left;
+      padding: 11px 12px;
+      border-radius: 9px;
+      font-size: 11px
+    }
+
+    .workspace-side nav button.active,
+    .workspace-side nav button:hover,
+    .ws-bottom button:hover {
+      background: #d6e8da;
+      color: var(--forest);
+      font-weight: 700
+    }
+
+    .ws-bottom {
+      margin-top: auto;
+      border-top: 1px solid #d3e3d7;
+      padding-top: 13px;
+      display: grid;
+      gap: 5px
+    }
+
+    .privacy-note {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 12px 15px;
+      font-size: 10px
+    }
+
+    .privacy-note small {
+      color: var(--muted);
+      font-size: 9px
+    }
+
+    .privacy-dot {
+      width: 8px;
+      height: 8px;
+      background: #70a27f;
+      border-radius: 50%
+    }
+
+    .workspace-content {
+      overflow: auto;
+      background: #fffefa
+    }
+
+    .ws-header {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 254, 250, .95);
+      backdrop-filter: blur(10px);
+      z-index: 5;
+      padding: 23px clamp(18px, 4vw, 56px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .ws-header>div span {
+      font-size: 9px;
+      color: var(--coral);
+      letter-spacing: .13em;
+      font-weight: 700
+    }
+
+    .ws-header h1 {
+      font: 36px Fraunces, Georgia, serif;
+      margin: 4px 0 0
+    }
+
+    .ws-menu {
+      display: none;
+      border: 0;
+      background: none;
+      color: var(--forest);
+      font-size: 20px;
+      margin-right: 10px
+    }
+
+    .ws-header>div:first-of-type {
+      flex: 1
+    }
+
+    .ws-header>.btn {
+      white-space: nowrap
+    }
+
+    #wsBody {
+      padding: 27px clamp(18px, 4vw, 56px)
+    }
+
+    .stat-boxes {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 11px
+    }
+
+    .stat-box {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px;
+      background: #f6faf6
+    }
+
+    .stat-box small {
+      font-size: 9px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .1em
+    }
+
+    .stat-box strong {
+      display: block;
+      font: 33px Fraunces, Georgia, serif;
+      margin-top: 6px;
+      color: var(--forest)
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+      padding: 21px;
+      margin-top: 14px;
+      box-shadow: 0 5px 18px rgba(29, 65, 49, .025)
+    }
+
+    .panel-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      align-items: center
+    }
+
+    .panel h3 {
+      font: 23px Fraunces, Georgia, serif;
+      margin: 0
+    }
+
+    .empty {
+      padding: 30px 0;
+      color: var(--muted);
+      font-size: 12px
+    }
+
+    .table-wrap {
+      overflow: auto;
+      margin-top: 15px
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10px
+    }
+
+    .table th,
+    .table td {
+      border-bottom: 1px solid #e8eee9;
+      padding: 11px 8px;
+      text-align: left;
+      white-space: nowrap
+    }
+
+    .table th {
+      font-size: 8px;
+      text-transform: uppercase;
+      color: var(--muted);
+      letter-spacing: .1em;
+      background: #f7faf7
+    }
+
+    .mini-btn {
+      border: 1px solid #d7e4d9;
+      background: white;
+      color: var(--forest);
+      border-radius: 8px;
+      padding: 7px 9px;
+      font-size: 10px
+    }
+
+    .mini-btn:hover {
+      background: #edf5ef
+    }
+
+    .search {
+      display: flex;
+      gap: 8px;
+      margin: 15px 0
+    }
+
+    .search input,
+    .search select {
+      flex: 1;
+      min-width: 0;
+      padding: 11px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: white;
+      color: var(--ink)
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 13px
+    }
+
+    .field label {
+      display: block;
+      color: var(--muted);
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: .08em
+    }
+
+    .field textarea {
+      min-height: 90px;
+      resize: vertical
+    }
+
+    .full-field {
+      grid-column: 1/-1
+    }
+
+    .form-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 19px
+    }
+
+    .pill {
+      display: inline-block;
+      background: #e0eee3;
+      color: var(--forest);
+      font-size: 9px;
+      border-radius: 999px;
+      padding: 4px 8px
+    }
+
+    .toast {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: var(--forest);
+      color: white;
+      border-radius: 10px;
+      padding: 12px 15px;
+      z-index: 100;
+      font-size: 11px;
+      box-shadow: var(--shadow)
+    }
+
+    [hidden] {
+      display: none !important
+    }
+
+    @media(max-width:950px) {
+      .topbar nav {
+        display: none
+      }
+
+      .nav-mobile {
+        display: block
+      }
+
+      .topbar.mobile-open nav {
+        display: grid;
+        position: absolute;
+        top: 115px;
+        left: 0;
+        right: 0;
+        background: #fffefa;
+        padding: 18px 22px;
+        gap: 13px;
+        border-bottom: 1px solid var(--line);
+        box-shadow: var(--shadow)
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 48px
+      }
+
+      .hero-visual {
+        padding-left: 10px
+      }
+
+      .hero-photo {
+        height: 500px;
+        min-height: 0
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .stats article:nth-child(2) {
+        border-right: 0
+      }
+
+      .stats article:nth-child(n+3) {
+        border-top: 1px solid rgba(255, 255, 255, .15)
+      }
+
+      .section {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 78px 7vw
+      }
+
+      .split-title,
+      .leadership,
+      .contact-layout {
+        grid-template-columns: 1fr
+      }
+
+      .about-grid,
+      .service-grid,
+      .award-grid,
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .section-heading {
+        display: block
+      }
+
+      .timeline {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .support {
+        grid-template-columns: 1fr;
+        padding: 75px 7vw
+      }
+
+      .workspace {
+        grid-template-columns: 1fr
+      }
+
+      .workspace-side {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 265px;
+        z-index: 75;
+        transform: translateX(-100%);
+        transition: transform .23s
+      }
+
+      .workspace.side-open .workspace-side {
+        transform: translateX(0)
+      }
+
+      .ws-brand button {
+        display: block
+      }
+
+      .ws-menu {
+        display: block
+      }
+
+      .stat-boxes {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    @media(max-width:620px) {
+      .top-ribbon {
+        font-size: 8px
+      }
+
+      .topbar {
+        height: 70px
+      }
+
+      .hero {
+        padding-top: 44px
+      }
+
+      .hero h1 {
+        font-size: 54px
+      }
+
+      .hero-text {
+        font-size: 14px
+      }
+
+      .hero-photo {
+        height: 420px;
+        border-radius: 120px 120px 16px 16px;
+        border-width: 6px
+      }
+
+      .float-card {
+        left: 0;
+        bottom: 0;
+        min-width: 165px;
+        padding: 14px 16px
+      }
+
+      .stats article {
+        padding: 21px 14px
+      }
+
+      .stats b {
+        font-size: 36px
+      }
+
+      .stats span {
+        font-size: 9px
+      }
+
+      .section h2 {
+        font-size: 46px
+      }
+
+      .about-grid,
+      .service-grid,
+      .award-grid,
+      .gallery-grid,
+      .timeline {
+        grid-template-columns: 1fr
+      }
+
+      .feature-strip {
+        display: block
+      }
+
+      .feature-strip small {
+        display: block;
+        margin-top: 12px
+      }
+
+      .team-list {
+        grid-template-columns: 1fr
+      }
+
+      .support h2 {
+        font-size: 52px
+      }
+
+      .donation-card strong {
+        font-size: 22px
+      }
+
+      .contact-buttons .btn {
+        width: 100%
+      }
+
+      .gallery-grid figure.large img,
+      .gallery-grid figure img {
+        height: 275px
+      }
+
+      .login-card {
+        padding: 29px 22px
+      }
+
+      .login-card h2 {
+        font-size: 43px
+      }
+
+      .ws-header {
+        padding: 18px 15px
+      }
+
+      .ws-header h1 {
+        font-size: 29px
+      }
+
+      .ws-header>.btn {
+        font-size: 9px;
+        padding: 10px 11px
+      }
+
+      #wsBody {
+        padding: 18px 14px
+      }
+
+      .stat-boxes {
+        gap: 8px
+      }
+
+      .stat-box {
+        padding: 13px
+      }
+
+      .stat-box strong {
+        font-size: 27px
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr
+      }
+
+      .full-field {
+        grid-column: auto
+      }
+
+      footer {
+        grid-template-columns: 1fr
+      }
+
+      .footer-links {
+        gap: 11px
+      }
+    }
+
+    /* ---- additions: photos, sync status, settings, login ---- */
+    .image-caption {
+      left: auto;
+      right: 16px;
+      max-width: calc(100% - 215px)
+    }
+
+    @media(max-width:620px) {
+      .image-caption {
+        max-width: calc(100% - 185px)
+      }
+    }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 4vw;
+      align-items: start;
+      margin-top: 8px
+    }
+
+    .about-photo {
+      margin: 0;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #e3efe6;
+      box-shadow: var(--shadow)
+    }
+
+    .about-photo img {
+      display: block;
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      object-position: center 30%;
+      filter: saturate(.85)
+    }
+
+    .about-photo figcaption {
+      padding: 10px 14px;
+      font-size: 10px;
+      color: var(--muted);
+      background: #fff
+    }
+
+    .about-layout .about-grid {
+      grid-template-columns: 1fr;
+      gap: 12px
+    }
+
+    .service.photo {
+      padding: 0;
+      overflow: hidden;
+      min-height: 0;
+      grid-row: span 2;
+      position: relative;
+      border: 0
+    }
+
+    .service.photo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 460px;
+      object-fit: cover;
+      object-position: center top;
+      filter: saturate(.85)
+    }
+
+    .service.photo figcaption {
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      background: rgba(255, 254, 250, .94);
+      color: var(--forest);
+      font-size: 10px;
+      padding: 9px 12px;
+      border-radius: 9px
+    }
+
+    .service.photo:hover {
+      transform: none
+    }
+
+    .gallery-grid {
+      grid-template-columns: 1.2fr .8fr .8fr;
+      grid-auto-rows: auto
+    }
+
+    .gallery-grid figure.large {
+      grid-row: span 2
+    }
+
+    .gallery-grid figure.large img {
+      height: 100%;
+      min-height: 560px
+    }
+
+    .gallery-grid figure img {
+      height: 260px
+    }
+
+    .official-photo {
+      min-height: 260px
+    }
+
+    .credits {
+      font-size: 9px;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-top: 18px;
+      max-width: 900px
+    }
+
+    .credits a {
+      text-decoration: underline
+    }
+
+    .login-card form .field {
+      margin-top: 12px
+    }
+
+    .login-card .two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px
+    }
+
+    .login-card .check {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      color: var(--muted);
+      margin: 14px 0 6px;
+      text-transform: none;
+      letter-spacing: 0
+    }
+
+    .login-card .check input {
+      width: auto;
+      margin: 0;
+      display: inline
+    }
+
+    .login-card .help {
+      font-size: 10px;
+      color: var(--muted);
+      line-height: 1.6;
+      background: #f2f7f3;
+      border-radius: 10px;
+      padding: 11px 13px;
+      margin-top: 14px
+    }
+
+    .login-card .help a {
+      text-decoration: underline;
+      font-weight: 700;
+      color: var(--forest)
+    }
+
+    .login-card .err {
+      display: none;
+      margin-top: 12px;
+      padding: 10px 12px;
+      border-radius: 9px;
+      background: #fbe9e3;
+      color: #8a3a22;
+      font-size: 11px;
+      line-height: 1.5
+    }
+
+    .login-card .err.show {
+      display: block
+    }
+
+    .sync {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 10px;
+      color: var(--muted)
+    }
+
+    .sync i {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #9aa9a0;
+      font-style: normal;
+      display: inline-block
+    }
+
+    .sync.ok i {
+      background: #70a27f
+    }
+
+    .sync.busy i {
+      background: var(--sun);
+      animation: pulse 1s infinite
+    }
+
+    .sync.err i {
+      background: var(--coral)
+    }
+
+    .sync.dirty i {
+      background: var(--sun)
+    }
+
+    @keyframes pulse {
+      50% {
+        opacity: .3
+      }
+    }
+
+    .ws-warn {
+      margin: 0 0 14px;
+      padding: 12px 15px;
+      border-radius: 12px;
+      background: #fdf1dc;
+      color: #7a4f12;
+      font-size: 11px;
+      line-height: 1.6;
+      border: 1px solid #f3dcb0
+    }
+
+    .ws-warn b {
+      display: block;
+      font-size: 12px
+    }
+
+    .ws-warn a {
+      text-decoration: underline;
+      font-weight: 700
+    }
+
+    .kv {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 8px 14px;
+      font-size: 11px;
+      margin-top: 14px
+    }
+
+    .kv dt {
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-size: 9px;
+      padding-top: 2px
+    }
+
+    .kv dd {
+      margin: 0;
+      overflow-wrap: anywhere
+    }
+
+    .muted-p {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.7;
+      margin: 8px 0 0
+    }
+
+    .field select {
+      appearance: auto
+    }
+
+    .danger {
+      color: var(--coral);
+      border-color: #e7c4b8
+    }
+
+    .btn:disabled,
+    .mini-btn:disabled {
+      opacity: .55;
+      cursor: wait
+    }
+
+    .tag-ok {
+      background: #e0eee3;
+      color: var(--forest)
+    }
+
+    .tag-warn {
+      background: #fdf1dc;
+      color: #7a4f12
+    }
+
+    .tag-bad {
+      background: #fbe9e3;
+      color: #8a3a22
+    }
+
+    .pill.done {
+      background: #e0eee3
+    }
+
+    .pill.pending {
+      background: #fdf1dc;
+      color: #7a4f12
+    }
+
+    .pill.overdue {
+      background: #fbe9e3;
+      color: #8a3a22
+    }
+
+    .row-actions {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap
+    }
+
+    .workspace-side nav button.active {
+      font-weight: 700
+    }
+
+    .topbar nav>a:focus-visible,
+    .btn:focus-visible,
+    .mini-btn:focus-visible,
+    .owner-button:focus-visible {
+      outline: 3px solid #a8cdb5;
+      outline-offset: 2px
+    }
+
+    @media(max-width:950px) {
+      .about-layout {
+        grid-template-columns: 1fr
+      }
+
+      .about-photo img {
+        height: 380px
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .gallery-grid figure.large {
+        grid-row: auto
+      }
+
+      .gallery-grid figure.large img {
+        min-height: 0;
+        height: 320px
+      }
+
+      .service.photo {
+        grid-row: auto
+      }
+
+      .service.photo img {
+        min-height: 0;
+        height: 320px
+      }
+    }
+
+    @media(max-width:620px) {
+      .gallery-grid {
+        grid-template-columns: 1fr
+      }
+
+      .login-card .two {
+        grid-template-columns: 1fr
+      }
+
+      .kv {
+        grid-template-columns: 1fr
+      }
+    }
+
+    .ws-brand small {
+      display: block;
+      font-size: 9px
+    }
+  </style>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+</head>
+
+<body>
+  <div class="top-ribbon">Public organization information · <a href="https://manavtahitay.org/" target="_blank"
+      rel="noopener">Visit official website ↗</a></div>
+  <header class="topbar" id="topbar"><a class="identity" href="#top"><span class="seal">म</span><span><strong>Maanavta
+          Hitaay</strong><small>Seva Chatra · Old Age Home</small></span></a><button class="nav-mobile" id="navMobile"
+      aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav"><a href="#about">About</a><a href="#care">Care</a><a href="#process">Process</a><a
+        href="#team">People</a><a href="#support">Support</a><a href="#visit">Visit</a><button class="owner-button"
+        id="openOwner">Owner records</button></nav>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div>
+        <div class="kicker">PRADHIKARAN · NIGDI · PIMPRI-CHINCHWAD · PUNE</div>
+        <h1>Care, connection<br>and <em>dignity.</em></h1>
+        <p class="hero-text">Maanavta Hitaay Seva Chatra presents itself as a shelter and care home for senior citizens,
+          with public information covering assisted living, dementia care, palliative care, medical support, nutrition,
+          family consultation and rehabilitation.</p>
+        <div class="actions"><a class="btn dark" href="tel:+917066883322">Call +91 70668 83322 <span>↗</span></a><a
+            class="btn light"
+            href="https://www.google.com/maps/search/?api=1&query=Staff+Colony+Plot+B+near+Gajanan+Maharaj+Temple+Sector+27+Pradhikaran+Nigdi+Pimpri-Chinchwad+411044"
+            target="_blank" rel="noopener">Open location <span>↗</span></a></div>
+        <p class="source-note">Public information is attributed to the organization's website and local business
+          directories. Service availability and admission eligibility should be confirmed directly.</p>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo"><img src="images/hero-couple.jpg"
+            alt="An elderly Indian couple standing together, smiling" width="934" height="1200" fetchpriority="high">
+          <div class="image-caption">Representative Indian senior imagery · not a resident photograph</div>
+        </div>
+        <div class="float-card"><span>Publicly listed</span><strong>Geriatric care</strong><small>Care services ·
+            Pune</small></div>
+      </div>
+    </section>
+    <section class="stats">
+      <article><b>8+</b><span>Years of serving</span><small>Figure published on the organization website</small>
+      </article>
+      <article><b>28+</b><span>Seniors served</span><small>Figure published on the organization website</small>
+      </article>
+      <article><b>100+</b><span>Caregivers</span><small>Figure published on the organization website</small></article>
+      <article><b>99%</b><span>Family trusted</span><small>Figure published on the organization website</small>
+      </article>
+    </section>
+    <section class="section" id="about">
+      <div class="section-index">01 / ABOUT</div>
+      <div class="section-main">
+        <div class="split-title">
+          <h2>More than a stay.<br><em>A support system.</em></h2>
+          <p>Maanavta Hitaay’s public mission describes shelter, healthcare support, counselling and social inclusion
+            for vulnerable people, alongside an old-age-home offering for elderly people who need shelter, medical care,
+            dignity and emotional support.</p>
+        </div>
+        <div class="quote">“Compassion, dignity, and selfless service”<small>Values stated by the organization</small>
+        </div>
+        <div class="about-layout">
+          <figure class="about-photo"><img src="images/resident-namaste.jpg"
+              alt="An elderly man greeting with folded hands at the doorway of a care home" width="960" height="638"
+              loading="lazy">
+            <figcaption>A resident at a social care home in West Bengal · representative image, not this facility
+            </figcaption>
+          </figure>
+          <div class="about-grid">
+            <article><span>Mission</span>
+              <p>Establish shelter homes, advocate for vulnerable populations and promote social inclusion with
+                stakeholder support.</p>
+            </article>
+            <article><span>Vision</span>
+              <p>Create a future where people facing homelessness can live with dignity, reach their potential and
+                participate in their community.</p>
+            </article>
+            <article><span>Approach</span>
+              <p>Public materials describe healthcare support, counselling, education, skill development and
+                employment-oriented support for vulnerable people.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section care" id="care">
+      <div class="section-index">02 / CARE</div>
+      <div class="section-main">
+        <div class="section-heading">
+          <h2>Care services<br><em>published online.</em></h2>
+          <p>These are services publicly listed by Maanavta Hitaay Seva Chatra. Actual availability and admission
+            eligibility should be confirmed directly with the home.</p>
+        </div>
+        <div class="service-grid">
+          <figure class="service photo"><img src="images/grandmother-portrait.jpg"
+              alt="Portrait of an elderly Indian woman in a white sari" width="720" height="914" loading="lazy">
+            <figcaption>Representative portrait · not a resident of this home</figcaption>
+          </figure>
+          <article class="service featured"><span class="num">01</span>
+            <h3>Assisted Living</h3>
+            <p>Daily support designed around dignity, comfort and individual needs.</p><a href="#visit">Enquire →</a>
+          </article>
+          <article class="service"><span class="num">02</span>
+            <h3>Dementia Care</h3>
+            <p>Structured support for memory loss, confusion and cognitive challenges.</p><a href="#visit">Enquire →</a>
+          </article>
+          <article class="service"><span class="num">03</span>
+            <h3>Palliative Care</h3>
+            <p>Comfort-focused support for residents facing serious or chronic illness.</p><a href="#visit">Enquire
+              →</a>
+          </article>
+          <article class="service"><span class="num">04</span>
+            <h3>Medical Support</h3>
+            <p>Publicly described as ongoing medical supervision and regular check-ups.</p><a href="#visit">Enquire
+              →</a>
+          </article>
+          <article class="service"><span class="num">05</span>
+            <h3>Meals & Nutrition</h3>
+            <p>Three meals and snacks are listed in a current third-party business profile.</p><a href="#visit">Enquire
+              →</a>
+          </article>
+          <article class="service"><span class="num">06</span>
+            <h3>Family Consults</h3>
+            <p>Family communication and consultation are included in the public service list.</p><a
+              href="#visit">Enquire →</a>
+          </article>
+          <article class="service"><span class="num">07</span>
+            <h3>Rehabilitation</h3>
+            <p>A current local listing describes physiotherapy and rehabilitation support.</p><a href="#visit">Enquire
+              →</a>
+          </article>
+        </div>
+        <div class="feature-strip">
+          <div><b>Also listed publicly</b><span>Scheduled transportation</span><span>Weekly
+              housekeeping</span><span>Linen service</span></div><small>Source: current local business listing. Confirm
+            current scope directly with the home.</small>
+        </div>
+      </div>
+    </section>
+    <section class="section process" id="process">
+      <div class="section-index">03 / PROCESS</div>
+      <div class="section-main">
+        <div class="section-heading">
+          <h2>A clear path from<br><em>enquiry to care.</em></h2>
+          <p>The organization's published care flow describes five stages.</p>
+        </div>
+        <div class="timeline">
+          <article><i>01</i>
+            <h3>Contact</h3>
+            <p>Families call the home to understand services and admission information.</p>
+          </article>
+          <article><i>02</i>
+            <h3>Consultation</h3>
+            <p>A representative discusses requirements and communicates them to the team.</p>
+          </article>
+          <article><i>03</i>
+            <h3>Assessment</h3>
+            <p>A medical check is described as part of understanding physical and medical needs.</p>
+          </article>
+          <article><i>04</i>
+            <h3>Nurse introduction</h3>
+            <p>The published flow includes a handover and tour of living quarters and amenities.</p>
+          </article>
+          <article><i>05</i>
+            <h3>Ongoing care</h3>
+            <p>Ongoing medical check-ups and support are described as part of the care process.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section director" id="team">
+      <div class="section-index">04 / PEOPLE</div>
+      <div class="section-main">
+        <div class="leadership">
+          <div class="portrait-card">
+            <div class="initial portrait-green">DSC</div><span>President & Chairman</span><strong>Mr. Dhanrajsingh
+              Chaudhary</strong><small>Public organization profile</small>
+          </div>
+          <div class="director-copy">
+            <div class="kicker">MANAGEMENT DESK</div>
+            <h2>Social work at<br><em>the centre.</em></h2>
+            <p>The organization's public profile says Mr. Dhanrajsingh Chaudhary has worked in social service for more
+              than 12 years and founded the old-age-home initiative with the aim of providing shelter and support to
+              people who need it.</p>
+            <p>The same profile describes work supporting orphanages, flood-affected people and citizens during the
+              COVID-19 period through food parcels, medical assistance and vaccination support.</p>
+          </div>
+        </div>
+        <div class="team-list">
+          <article>
+            <div class="initial">RR</div><b>Ms. Raziya (Roshni)</b><span>Center Manager</span>
+          </article>
+          <article>
+            <div class="initial">AAK</div><b>Adv. Atul Kamble</b><span>Advocate · District & High Court</span>
+          </article>
+          <article>
+            <div class="initial">SC</div><b>Dr. Shruti Chordiya</b><span>Healthcare & Pharmacy Support</span>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section recognition">
+      <div class="section-index">05 / RECOGNITION</div>
+      <div class="section-main">
+        <div class="section-heading">
+          <h2>Recognition listed<br><em>by the organization.</em></h2>
+          <p>The following honours are named in the organization's public profile for Mr. Dhanrajsingh Chaudhary. They
+            are presented as published claims, not independently verified awards.</p>
+        </div>
+        <div class="award-grid"><span>Pune Ratna Gaurav · 2025</span><span>PCMC Social Youth Icon · 2024</span><span>The
+            Great Image Social Excellent · 2024</span><span>Youth Social Icon · 2023</span><span>Maharashtra Social Icon
+            · 2023</span><span>Maharashtra Kulbhushan Award · 2022</span></div>
+      </div>
+    </section>
+    <section class="support" id="support">
+      <div class="support-copy">
+        <div class="kicker">WAYS TO SUPPORT</div>
+        <h2>Care takes<br><em>many hands.</em></h2>
+        <p>The public website provides a donation route through UPI and describes donations as eligible for income-tax
+          benefits under Section 80G. Confirm current donation and tax details directly with the organization before
+          contributing.</p>
+      </div>
+      <div class="donation-card"><small>PUBLICLY LISTED UPI</small><strong>7066883322@ucobank</strong>
+        <div class="donation-row"><button data-copy="7066883322@ucobank">Copy UPI ID</button><a
+            href="https://manavtahitay.org/Donate" target="_blank" rel="noopener">Donation page ↗</a></div>
+        <div class="suggested"><span>₹500</span><span>₹1,000</span><span>₹2,000</span><span>₹5,000</span></div><small
+          class="tiny">Suggested amounts shown on the public donation page.</small>
+      </div>
+    </section>
+    <section class="section" id="visit">
+      <div class="section-index">06 / VISIT</div>
+      <div class="section-main">
+        <div class="contact-layout">
+          <div>
+            <div class="section-heading">
+              <h2>Come by,<br><em>talk to the team.</em></h2>
+              <p>For admission enquiries, visiting information, family coordination or current availability, use the
+                published contact details.</p>
+            </div>
+            <div class="contact-buttons"><a class="btn dark" href="tel:+917066883322">Call now</a><a class="btn light"
+                href="mailto:maanavtahitaay2026@gmail.com">Email</a><a class="btn light"
+                href="https://www.google.com/maps/search/?api=1&query=Staff+Colony+Plot+B+near+Gajanan+Maharaj+Temple+Sector+27+Pradhikaran+Nigdi+Pimpri-Chinchwad+411044"
+                target="_blank" rel="noopener">Maps</a></div>
+          </div>
+          <div class="address-card">
+            <article><span>Address</span><strong>Staff Colony, Plot B,<br>near Gajanan Maharaj Temple,<br>Sector No. 27,
+                Pradhikaran, Nigdi,<br>Pimpri-Chinchwad, Maharashtra 411044</strong></article>
+            <article><span>Phone</span><strong>+91 70668 83322</strong></article>
+            <article><span>Email</span><strong>maanavtahitaay2026@gmail.com</strong></article>
+            <article><span>Hours</span><strong>Mon–Sat · Listed as 24 hours<br>Sun · 9:00 AM–9:00 PM</strong></article>
+            <small>Hours sourced from a public directory listing. Confirm before travelling.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section gallery">
+      <div class="section-index">07 / GALLERY</div>
+      <div class="section-main">
+        <div class="section-heading">
+          <h2>Life at a home,<br><em>in real pictures.</em></h2>
+          <p>Representative photographs of Indian senior life and care homes are used until the home's own photographs
+            are added. Every caption says whether an image shows this facility.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="large"><img src="images/seniors-community.jpg"
+              alt="A group of Indian senior citizens chatting together outdoors" width="960" height="640"
+              loading="lazy">
+            <figcaption>Companionship and community · representative image</figcaption>
+          </figure>
+          <figure><img src="images/residents-companionship.jpg"
+              alt="Two elderly women residents walking together at a care home" width="798" height="1200"
+              loading="lazy">
+            <figcaption>Residents at a care home in West Bengal · not this facility</figcaption>
+          </figure>
+          <figure><img src="images/care-home-courtyard.jpg" alt="The courtyard of an Indian old age home" width="960"
+              height="638" loading="lazy">
+            <figcaption>An old-age-home courtyard · not this facility</figcaption>
+          </figure>
+          <figure><img src="images/family-generations.jpg" alt="An elderly woman walking with her family" width="960"
+              height="720" loading="lazy">
+            <figcaption>Family and generations · representative image</figcaption>
+          </figure>
+          <div class="official-photo"><strong>Want actual home photographs?</strong>
+            <p>The official website publishes its own gallery and team photographs.</p><a
+              href="https://manavtahitay.org/" target="_blank" rel="noopener">View official site ↗</a>
+          </div>
+        </div>
+        <p class="credits">Photo credits (Wikimedia Commons): <a
+            href="https://commons.wikimedia.org/wiki/File:An_Indian_elderly_couple_in_front_of_the_Indian_Museum_in_Kolkata,_West_Bengal,_India,_photographed_on_October_21,_2023.jpg"
+            target="_blank" rel="noopener">Billjones94, CC0</a> · <a
+            href="https://commons.wikimedia.org/wiki/File:Aged_Male_Resident_-_Social_Care_Home_-_Janasiksha_Prochar_Kendra_-_Baganda_-_Hooghly_2014-09-28_8559.JPG"
+            target="_blank" rel="noopener">Biswarup Ganguly, CC BY 3.0</a> · <a
+            href="https://commons.wikimedia.org/wiki/File:Aged_Women_Residents_-_Janasiksha_Prochar_Kendra_-_Baganda_-_Hooghly_2014-09-28_8282.JPG"
+            target="_blank" rel="noopener">Biswarup Ganguly, CC BY 3.0</a> · <a
+            href="https://commons.wikimedia.org/wiki/File:Old_Age_Home_-_Janasiksha_Prochar_Kendra_-_Baganda_-_Hooghly_2014-09-28_8281.JPG"
+            target="_blank" rel="noopener">Biswarup Ganguly, CC BY 3.0</a> · <a
+            href="https://commons.wikimedia.org/wiki/File:An_Indian_Senior_Citizen_Group_Of_Science_Museums_-_Kolkata_2024-02-25_08526.jpg"
+            target="_blank" rel="noopener">Biswarup Ganguly, CC BY 4.0</a> · <a
+            href="https://commons.wikimedia.org/wiki/File:Grandmother_in_her_traditional_attire.jpg" target="_blank"
+            rel="noopener">Reakhatalukdar, CC BY-SA 4.0</a> · <a
+            href="https://commons.wikimedia.org/wiki/File:India_-_Faces_-_generations_(2566365965).jpg" target="_blank"
+            rel="noopener">McKay Savage, CC BY 2.0</a>. Images are resized; no other changes.</p>
+      </div>
+    </section>
+    <section class="section faq">
+      <div class="section-index">08 / FAQ</div>
+      <div class="section-main">
+        <div class="section-heading">
+          <h2>Questions families<br><em>usually ask.</em></h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Where is the home located?</summary>
+            <p>The public directory listing gives Staff Colony, Plot B, near Gajanan Maharaj Temple, Sector No. 27,
+              Pradhikaran, Nigdi, Pimpri-Chinchwad, Maharashtra 411044.</p>
+          </details>
+          <details>
+            <summary>How do I enquire about admission?</summary>
+            <p>Call +91 70668 83322. The published flow describes consultation, assessment and a nurse introduction
+              before ongoing medical care.</p>
+          </details>
+          <details>
+            <summary>What care services are listed?</summary>
+            <p>Assisted living, dementia care, palliative care, medical support, meals & nutrition, family consults and
+              rehabilitation are listed publicly.</p>
+          </details>
+          <details>
+            <summary>Are these actual resident or facility photos?</summary>
+            <p>No. Representative images are clearly labelled to avoid presenting unrelated people or facilities as
+              residents of Maanavta Hitaay Seva Chatra.</p>
+          </details>
+          <details>
+            <summary>Can the owner manage resident records here?</summary>
+            <p>Yes. The Owner records area keeps admission records, medical notes, family contacts, follow-ups and
+              room/bed tracking. Records are saved to a private GitHub repository that only the owner's access token can
+              read or write.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div><a class="identity" href="#top"><span class="seal">म</span><span><strong>Maanavta Hitaay</strong><small>Seva
+            Chatra · Old Age Home</small></span></a></div>
+    <div class="footer-links"><a href="https://manavtahitay.org/" target="_blank" rel="noopener">Official website</a><a
+        href="mailto:maanavtahitaay2026@gmail.com">Email</a><a href="tel:+917066883322">Call</a><button
+        id="openOwner2">Owner records</button></div>
+    <p>Public information has been consolidated from the organization website and local directories. Confirm important
+      details before relying on them.</p>
+  </footer>
+
+  <div class="modal" id="ownerModal" hidden>
+    <div class="login-card"><button class="modal-x" id="closeOwner" aria-label="Close">×</button>
+      <div class="kicker">PRIVATE WORKSPACE</div>
+      <h2>Resident records,<br><em>kept off the public page.</em></h2>
+      <form id="loginForm" autocomplete="on">
+        <p>Sign in to open resident records.</p>
+        <div class="field"><label>Owner ID<input id="loginUser" required autocomplete="username"></label></div>
+        <div class="field"><label>Passcode<input id="loginPass" type="password" required
+              autocomplete="current-password"></label></div>
+        <button class="btn dark" style="width:100%;margin-top:18px" id="loginBtn">Sign in →</button>
+        <div class="err" id="loginErr"></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="workspace" id="workspace" hidden>
+    <aside class="workspace-side">
+      <div class="ws-brand"><span class="seal">म</span>
+        <div><b>Maanavta Hitaay</b><small>Owner records</small></div><button id="closeWs"
+          aria-label="Close menu">×</button>
+      </div>
+      <nav><button class="active" data-page="dashboard">Dashboard</button><button
+          data-page="residents">Residents</button><button data-page="admission">New admission</button><button
+          data-page="followups">Medical follow-ups</button><button data-page="beds">Rooms & beds</button><button
+          data-page="documents">Documents</button><button data-page="backup">Backup & export</button><button
+          data-page="settings">Account & storage</button></nav>
+      <div class="ws-bottom">
+        <div class="privacy-note"><span class="sync" id="syncBadge"><i></i><span>Not connected</span></span></div>
+        <button id="logout">Sign out</button>
+      </div>
+    </aside>
+    <section class="workspace-content">
+      <header class="ws-header"><button class="ws-menu" id="wsMenu" aria-label="Open menu">☰</button>
+        <div><span>OWNER WORKSPACE</span>
+          <h1 id="wsTitle">Dashboard</h1>
+        </div><button class="btn dark" id="quickAdmission">+ New resident</button>
+      </header>
+      <div id="wsBody"></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" hidden role="status"></div>
+
+  <script>
+    /* =========================================================
+       Maanavta Hitaay — owner records stored in a GitHub repository
+       Every save = one commit to data/records.json in the records repo.
+       ========================================================= */
+    /* ======================= OWNER SETTINGS (edit these) =======================
+       firebase    : paste the config of your Firebase project here (README, step 2).
+       loginDomain : the owner signs in with an ID like "owner"; the page turns it
+                     into owner@<loginDomain>, which is the email of the account you
+                     create in Firebase (README, step 3).
+       ========================================================================== */
+    const CONFIG = {
+      firebase: {
+        apiKey: 'AIzaSyBfd8_8S_--cSN4jFTByTMkLsDDo41nyvI',
+        authDomain: 'maanavta-8f8d3.firebaseapp.com',
+        projectId: 'maanavta-8f8d3'
+      },
+      loginDomain: 'maanavta.org'
+    };
+    const $ = s => document.querySelector(s), $$ = s => document.querySelectorAll(s);
+    const esc = v => String(v ?? '').replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[m]));
+    const toast = m => { const t = $('#toast'); t.textContent = m; t.hidden = false; clearTimeout(window.__toastTimer); window.__toastTimer = setTimeout(() => t.hidden = true, 2600); };
+    const today = () => new Date().toISOString().slice(0, 10);
+    const uid = () => (crypto.randomUUID ? crypto.randomUUID() : 'id-' + Date.now().toString(36) + Math.random().toString(36).slice(2));
+
+    /* ---------- public page ---------- */
+    const openOwner = async () => {
+      try { DB.init(); } catch (e) { toast(e.message); }
+      if (DB.user) { try { await openWorkspace(); return; } catch (e) { toast(e.message); } }
+      $('#ownerModal').hidden = false; $('#loginErr').classList.remove('show'); if (!$('#loginUser').value) $('#loginUser').value = localStorage.getItem('mh_owner_id') || ''; setTimeout(() => ($('#loginUser').value ? $('#loginPass') : $('#loginUser')).focus(), 50);
+    };
+    const closeOwner = () => { $('#ownerModal').hidden = true; };
+    $('#openOwner').onclick = openOwner; $('#openOwner2').onclick = openOwner; $('#closeOwner').onclick = closeOwner;
+    $('#ownerModal').onclick = e => { if (e.target.id === 'ownerModal') closeOwner(); };
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#ownerModal').hidden) closeOwner(); });
+    $('#navMobile').onclick = () => { const open = $('#topbar').classList.toggle('mobile-open'); $('#navMobile').setAttribute('aria-expanded', open); };
+    $$('#nav a').forEach(a => a.addEventListener('click', () => $('#topbar').classList.remove('mobile-open')));
+    $$('[data-copy]').forEach(b => b.onclick = () => navigator.clipboard.writeText(b.dataset.copy).then(() => toast('UPI ID copied')).catch(() => toast('Could not copy — select and copy manually')));
+
+    /* ---------- Firebase storage ---------- */
+    const CACHE_KEY = 'mh_records_cache';
+    const emptyData = () => ({ version: 1, updatedAt: null, residents: [], followups: [], beds: [{ id: uid(), room: 'A-01', bed: '1', status: 'Available', resident: '' }, { id: uid(), room: 'A-01', bed: '2', status: 'Available', resident: '' }, { id: uid(), room: 'A-02', bed: '1', status: 'Available', resident: '' }, { id: uid(), room: 'A-02', bed: '2', status: 'Available', resident: '' }] });
+    const configured = () => CONFIG.firebase && CONFIG.firebase.apiKey && !/^PASTE_/.test(CONFIG.firebase.apiKey) && !/^PASTE_/.test(CONFIG.firebase.projectId);
+    const DB = {
+      app: null, auth: null, db: null, user: null, unsub: null, state: 'off', saving: null, dirty: false, lastSaved: null,
+      init() {
+        if (this.app || !configured()) return;
+        if (typeof firebase === 'undefined') throw new Error('The Firebase scripts did not load. Check the internet connection and reload the page.');
+        this.app = firebase.initializeApp(CONFIG.firebase); this.auth = firebase.auth(); this.db = firebase.firestore();
+        this.db.enablePersistence({ synchronizeTabs: true }).catch(() => { /* offline cache unavailable in this browser; online use still works */ });
+        this.auth.onAuthStateChanged(u => { this.user = u; if (!u && !$('#workspace').hidden) { $('#workspace').hidden = true; setSync('off', 'Signed out'); } });
+      },
+      ref() { return this.db.collection('records').doc('main'); },
+      async signIn(id, pass) {
+        this.init(); const email = id.includes('@') ? id : `${id}@${CONFIG.loginDomain}`;
+        try { const cred = await this.auth.signInWithEmailAndPassword(email, pass); this.user = cred.user; }
+        catch (e) {
+          const c = e.code || '';
+          if (/wrong-password|user-not-found|invalid-credential|invalid-email|invalid-login/.test(c)) throw new Error('Owner ID or passcode is incorrect.');
+          if (/too-many-requests/.test(c)) throw new Error('Too many attempts. Wait a few minutes and try again.');
+          if (/network-request-failed/.test(c)) throw new Error('No internet connection. Connect and try again.');
+          if (/operation-not-allowed/.test(c)) throw new Error('Email/password sign-in is not switched on in Firebase (README, step 3).');
+          throw new Error(e.message || 'Sign-in failed.');
+        }
+      },
+      async load() {
+        const snap = await this.ref().get();
+        return snap.exists ? snap.data() : null;
+      },
+      listen() {
+        if (this.unsub) this.unsub();
+        this.unsub = this.ref().onSnapshot(snap => {
+          if (!snap.exists || snap.metadata.hasPendingWrites || this.dirty || this.saving) return;
+          const remote = snap.data(); if (remote.updatedAt && remote.updatedAt === data.updatedAt) return;
+          data = normalize(remote); cacheLocal(); setSync('ok', 'Updated from another device'); rerender();
+        }, err => { setSync('err', 'Connection lost'); console.warn(err); });
+      },
+      async write(dataObj) {
+        try { await this.ref().set(JSON.parse(JSON.stringify(dataObj))); this.lastSaved = new Date(); }
+        catch (e) {
+          if (/permission-denied/.test(e.code || '')) throw new Error('Firebase refused the save. Check the Firestore rules (README, step 4).');
+          if (/unavailable|network/.test(e.code || '')) throw new Error('No connection. The change is kept on this device and will be saved when you are back online.');
+          throw new Error(e.message || 'Save failed.');
+        }
+      },
+      async signOut() { if (this.unsub) { this.unsub(); this.unsub = null; } if (this.auth) await this.auth.signOut(); this.user = null; }
+    };
+
+    /* ---------- data + sync ---------- */
+    let data = emptyData();
+    let saveTimer = null;
+    function setSync(state, text) { const b = $('#syncBadge'); b.className = 'sync ' + state; b.querySelector('span').textContent = text; DB.state = state; }
+    function cacheLocal() { try { localStorage.setItem(CACHE_KEY, JSON.stringify(data)); } catch { /* storage full or disabled */ } }
+    function save(message) { // debounced; all pages call save('what changed')
+      data.updatedAt = new Date().toISOString(); cacheLocal(); DB.dirty = true; setSync('dirty', 'Unsaved changes');
+      clearTimeout(saveTimer); saveTimer = setTimeout(flush, 500);
+    }
+    async function flush() {
+      if (!DB.dirty || !DB.user) return; if (DB.saving) { await DB.saving; return flush(); }
+      DB.dirty = false; setSync('busy', 'Saving…');
+      DB.saving = DB.write(data).then(() => { if (!DB.dirty) setSync('ok', 'Saved ' + DB.lastSaved.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })); })
+        .catch(e => { DB.dirty = true; setSync('err', 'Not saved — tap to retry'); toast(e.message); })
+        .finally(() => { DB.saving = null; });
+      return DB.saving;
+    }
+    $('#syncBadge').onclick = () => { if (DB.state === 'err' || DB.state === 'dirty') { clearTimeout(saveTimer); flush(); } };
+    window.addEventListener('beforeunload', e => { if (DB.dirty || DB.saving) { e.preventDefault(); e.returnValue = ''; } });
+
+    /* ---------- login ---------- */
+    const showErr = (sel, msg) => { const e = $(sel); e.textContent = msg; e.classList.add('show'); };
+    $('#loginForm').onsubmit = async e => {
+      e.preventDefault(); $('#loginErr').classList.remove('show');
+      const id = $('#loginUser').value.trim(), pass = $('#loginPass').value, btn = $('#loginBtn');
+      btn.disabled = true; btn.textContent = 'Signing in…';
+      try {
+        if (!configured()) throw new Error('The database is not connected yet. Paste your Firebase config into the OWNER SETTINGS block at the top of the page script (see README).');
+        await DB.signIn(id, pass); localStorage.setItem('mh_owner_id', id);
+        await openWorkspace();
+      } catch (ex) { showErr('#loginErr', ex.message); }
+      finally { btn.disabled = false; btn.textContent = 'Sign in →'; }
+    };
+    async function openWorkspace() {
+      setSync('busy', 'Loading…');
+      try {
+        const remote = await DB.load();
+        if (remote) { data = normalize(remote); cacheLocal(); setSync('ok', 'Synced'); }
+        else { data = emptyData(); cacheLocal(); await DB.write(data); setSync('ok', 'Records created'); }
+      } catch (ex) {
+        const cached = localStorage.getItem(CACHE_KEY);
+        if (!cached) throw ex;
+        data = normalize(JSON.parse(cached)); setSync('err', 'Offline — showing last copy'); toast(ex.message);
+      }
+      DB.listen(); closeOwner(); $('#workspace').hidden = false; renderWS('dashboard');
+    }
+    function normalize(d) { const base = emptyData(); return { version: 1, updatedAt: d.updatedAt || null, residents: Array.isArray(d.residents) ? d.residents : [], followups: Array.isArray(d.followups) ? d.followups : [], beds: Array.isArray(d.beds) && d.beds.length ? d.beds.map(b => ({ id: b.id || uid(), room: b.room || '', bed: b.bed || '', status: b.status || 'Available', resident: b.resident || '' })) : base.beds }; }
+    async function signOut() { if (DB.dirty || DB.saving) { toast('Finishing save before signing out…'); clearTimeout(saveTimer); await flush(); } $('#workspace').hidden = true; await DB.signOut(); setSync('off', 'Not connected'); $('#loginPass').value = ''; }
+    $('#closeWs').onclick = () => $('#workspace').classList.remove('side-open');
+    $('#logout').onclick = signOut;
+    $('#wsMenu').onclick = () => $('#workspace').classList.toggle('side-open');
+    $('#quickAdmission').onclick = () => renderWS('admission');
+    $$('.workspace-side nav button').forEach(b => b.onclick = () => { renderWS(b.dataset.page); $('#workspace').classList.remove('side-open'); });
+
+    /* ---------- workspace ---------- */
+    const titles = { dashboard: 'Dashboard', residents: 'Residents', admission: 'New admission', followups: 'Medical follow-ups', beds: 'Rooms & beds', documents: 'Documents', backup: 'Backup & export', settings: 'Storage settings' };
+    function shell(title, html) { $('#wsTitle').textContent = title; $('#wsBody').innerHTML = publicWarning() + html; $('.workspace-content').scrollTop = 0; }
+    function publicWarning() { return ''; }
+    let current = { page: 'dashboard', arg: undefined };
+    function renderWS(page, arg) {
+      current = { page, arg };
+      $$('.workspace-side nav button').forEach(b => b.classList.toggle('active', b.dataset.page === page));
+      const pages = { dashboard, residents, admission, followups, beds, documents, backup, settings };
+      (pages[page] || dashboard)(arg); if (!arg) $('#wsTitle').textContent = titles[page] || 'Dashboard';
+    }
+    const active = () => data.residents.filter(r => !r.archived);
+    const resName = id => (data.residents.find(r => r.id === id) || {}).name || '';
+    const fmtDate = d => d ? new Date(d + 'T00:00:00').toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' }) : '—';
+    const age = dob => { if (!dob) return ''; const b = new Date(dob), n = new Date(); let a = n.getFullYear() - b.getFullYear(); if (n < new Date(n.getFullYear(), b.getMonth(), b.getDate())) a--; return a; };
+    const fuStatus = f => f.status === 'Done' ? 'done' : (f.date && f.date < today() ? 'overdue' : 'pending');
+
+    function dashboard() {
+      const occ = data.beds.filter(x => x.status === 'Occupied').length, due = data.followups.filter(f => f.status !== 'Done' && f.date && f.date <= today());
+      const upcoming = data.followups.filter(f => f.status !== 'Done').sort((a, b) => (a.date || '').localeCompare(b.date || '')).slice(0, 5);
+      shell('Dashboard', `<div class="stat-boxes"><div class="stat-box"><small>Residents</small><strong>${active().length}</strong></div><div class="stat-box"><small>Open beds</small><strong>${data.beds.length - occ}<span style="font-size:14px;color:var(--muted)"> / ${data.beds.length}</span></strong></div><div class="stat-box"><small>Follow-ups due</small><strong>${due.length}</strong></div><div class="stat-box"><small>Last updated</small><strong style="font-size:17px;line-height:1.3;margin-top:10px">${data.updatedAt ? new Date(data.updatedAt).toLocaleString('en-IN', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' }) : '—'}</strong></div></div>
+  <div class="panel"><div class="panel-head"><h3>Latest resident records</h3><button class="mini-btn" onclick="renderWS('residents')">Open register</button></div>${active().length ? `<div class="table-wrap"><table class="table"><thead><tr><th>Name</th><th>Age</th><th>Room / bed</th><th>Contact</th><th></th></tr></thead><tbody>${active().slice(-5).reverse().map(r => `<tr><td><b>${esc(r.name)}</b></td><td>${esc(age(r.dob) || '—')}</td><td>${esc(r.room || '—')}</td><td>${esc(r.contactPhone || '—')}</td><td><button class="mini-btn" onclick="editR('${r.id}')">Open</button></td></tr>`).join('')}</tbody></table></div>` : '<div class="empty">No resident records yet. Use “New resident” to add the first record.</div>'}</div>
+  <div class="panel"><div class="panel-head"><h3>Upcoming follow-ups</h3><button class="mini-btn" onclick="renderWS('followups')">All follow-ups</button></div>${upcoming.length ? `<div class="table-wrap"><table class="table"><thead><tr><th>Resident</th><th>Date</th><th>Purpose</th><th>Status</th></tr></thead><tbody>${upcoming.map(f => `<tr><td><b>${esc(resName(f.residentId) || f.resident)}</b></td><td>${fmtDate(f.date)}</td><td>${esc(f.purpose)}</td><td><span class="pill ${fuStatus(f)}">${fuStatus(f) === 'overdue' ? 'Overdue' : esc(f.status)}</span></td></tr>`).join('')}</tbody></table></div>` : '<div class="empty">Nothing scheduled. Add a follow-up from the Medical follow-ups page.</div>'}</div>`);
+    }
+
+    function residents() {
+      shell('Residents', `<div class="panel"><div class="panel-head"><h3>Resident register</h3><button class="btn dark" onclick="renderWS('admission')">+ New resident</button></div><div class="search"><input id="rq" placeholder="Search by name, room, contact or condition" oninput="filterR()"><select id="rArch" onchange="filterR()"><option value="active">Current residents</option><option value="archived">Archived</option><option value="all">All</option></select></div><div class="table-wrap"><table class="table"><thead><tr><th>Name</th><th>Age</th><th>Room / bed</th><th>Admitted</th><th>Medical note</th><th>Contact</th><th></th></tr></thead><tbody id="rrows"></tbody></table></div></div>`);
+      filterR();
+    }
+    function rowR(r) { return `<tr><td><b>${esc(r.name)}</b>${r.archived ? ' <span class="pill">Archived</span>' : ''}</td><td>${esc(age(r.dob) || '—')}</td><td>${esc(r.room || '—')}</td><td>${fmtDate(r.admitted)}</td><td style="white-space:normal;max-width:260px">${esc(r.medical || '—')}</td><td>${esc(r.contactPhone || '—')}</td><td><button class="mini-btn" onclick="editR('${r.id}')">Open</button></td></tr>`; }
+    function filterR() {
+      const q = ($('#rq').value || '').toLowerCase(), mode = $('#rArch').value;
+      const list = data.residents.filter(r => mode === 'all' ? true : mode === 'archived' ? r.archived : !r.archived).filter(r => Object.values(r).join(' ').toLowerCase().includes(q));
+      $('#rrows').innerHTML = list.map(rowR).join('') || `<tr><td colspan="7" class="empty">${q ? 'No resident matches that search.' : 'No records here yet.'}</td></tr>`;
+    }
+    function field(n, l, v = '', type = 'text', cl = '', extra = '') { return `<div class="field ${cl}"><label>${l}${type === 'textarea' ? `<textarea name="${n}" ${extra}>${esc(v)}</textarea>` : `<input name="${n}" type="${type}" value="${esc(v)}" ${extra}>`}</label></div>`; }
+    function selectField(n, l, v, options, cl = '') { return `<div class="field ${cl}"><label>${l}<select name="${n}">${options.map(o => `<option value="${esc(o.v)}" ${o.v === v ? 'selected' : ''}>${esc(o.t)}</option>`).join('')}</select></label></div>`; }
+    function bedOptions(current) { const opts = [{ v: '', t: 'Not assigned' }]; data.beds.forEach(b => { const label = `${b.room} / bed ${b.bed}`; if (b.status === 'Available' || label === current) opts.push({ v: label, t: label + (b.status === 'Occupied' && label !== current ? ' (occupied)' : '') }); }); if (current && !opts.some(o => o.v === current)) opts.push({ v: current, t: current }); return opts; }
+
+    function admission(id = null) {
+      const r = data.residents.find(x => x.id === id) || {};
+      shell(id ? 'Resident record' : 'New admission', `<div class="panel"><form id="residentForm"><div class="form-grid">${field('name', 'Full name', r.name, 'text', '', 'required')}${field('dob', 'Date of birth', r.dob, 'date')}${selectField('gender', 'Gender', r.gender || '', [{ v: '', t: '—' }, { v: 'Female', t: 'Female' }, { v: 'Male', t: 'Male' }, { v: 'Other', t: 'Other' }])}${field('admitted', 'Admission date', r.admitted || (id ? '' : today()), 'date')}${selectField('room', 'Room / bed', r.room || '', bedOptions(r.room))}${field('aadhaar', 'ID document (type / last 4 digits only)', r.aadhaar)}${field('contact', 'Primary family / close contact', r.contact)}${field('contactRelation', 'Relationship', r.contactRelation)}${field('contactPhone', 'Contact number', r.contactPhone, 'tel')}${field('contactPhone2', 'Alternate number', r.contactPhone2, 'tel')}${field('address', 'Contact address', r.address, 'text', 'full-field')}${field('medical', 'Medical condition / important note', r.medical, 'textarea', 'full-field')}${field('medications', 'Medication notes', r.medications, 'textarea', 'full-field')}${field('doctor', 'Treating doctor / hospital', r.doctor)}${field('blood', 'Blood group', r.blood)}${field('emergency', 'Emergency instructions', r.emergency, 'textarea', 'full-field')}${field('notes', 'Additional information', r.notes, 'textarea', 'full-field')}</div><div class="form-actions"><button class="btn dark">${id ? 'Save changes' : 'Save resident'}</button><button type="button" class="mini-btn" onclick="renderWS('residents')">Cancel</button>${id ? `<button type="button" class="mini-btn" onclick="copyDocFor('${id}')">Copy record as text</button><button type="button" class="mini-btn ${r.archived ? '' : 'danger'}" onclick="archiveR('${id}')">${r.archived ? 'Restore resident' : 'Archive resident'}</button>` : ''}</div></form></div>${id ? followupPanel(id) : ''}`);
+      $('#residentForm').onsubmit = e => {
+        e.preventDefault(); const v = Object.fromEntries(new FormData(e.target)); if (!v.name.trim()) return;
+        v.id = id || uid(); v.archived = !!r.archived; v.createdAt = r.createdAt || new Date().toISOString();
+        const prevRoom = r.room || '';
+        if (id) data.residents[data.residents.findIndex(x => x.id === id)] = v; else data.residents.push(v);
+        syncBeds(prevRoom, v.room, v.name, v.archived);
+        save(`${id ? 'Update' : 'Add'} resident ${v.name}`); toast(id ? 'Changes saved' : 'Resident saved'); renderWS('residents');
+      };
+    }
+    function syncBeds(prevRoom, newRoom, name, archived) {
+      data.beds.forEach(b => { const label = `${b.room} / bed ${b.bed}`; if (label === prevRoom && label !== newRoom) { b.status = 'Available'; b.resident = ''; } if (label === newRoom && !archived) { b.status = 'Occupied'; b.resident = name; } });
+    }
+    function editR(id) { renderWS('admission', id); }
+    function archiveR(id) {
+      const r = data.residents.find(x => x.id === id); if (!r) return;
+      if (r.archived) { r.archived = false; syncBeds('', r.room, r.name, false); save(`Restore resident ${r.name}`); toast('Resident restored'); renderWS('admission', id); return; }
+      if (!confirm(`Archive ${r.name}? The record is kept but hidden from the current list, and the bed is freed.`)) return;
+      r.archived = true; r.archivedAt = today(); syncBeds(r.room, '', r.name, true); save(`Archive resident ${r.name}`); toast('Resident archived'); renderWS('residents');
+    }
+
+    function followupPanel(residentId) {
+      const list = data.followups.filter(f => f.residentId === residentId).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+      return `<div class="panel"><div class="panel-head"><h3>Medical follow-ups</h3><button class="mini-btn" onclick="addF('${residentId}')">+ Add follow-up</button></div>${list.length ? `<div class="table-wrap"><table class="table"><thead><tr><th>Date</th><th>Purpose</th><th>Note</th><th>Status</th><th></th></tr></thead><tbody>${list.map(f => fuRow(f, { resident: residentId })).join('')}</tbody></table></div>` : '<div class="empty">No follow-ups recorded for this resident.</div>'}</div>`;
+    }
+    function fuRow(f, ctx = {}) { const s = fuStatus(f); return `<tr>${ctx.withName ? `<td><b>${esc(resName(f.residentId) || f.resident || '—')}</b></td>` : ''}<td>${fmtDate(f.date)}</td><td>${esc(f.purpose)}</td><td style="white-space:normal;max-width:280px">${esc(f.note || '—')}</td><td><span class="pill ${s}">${s === 'overdue' ? 'Overdue' : esc(f.status)}</span></td><td><div class="row-actions">${f.status !== 'Done' ? `<button class="mini-btn" onclick="doneF('${f.id}')">Mark done</button>` : ''}<button class="mini-btn" onclick="addF(${ctx.resident ? `'${ctx.resident}'` : 'null'},'${f.id}')">Edit</button><button class="mini-btn danger" onclick="delF('${f.id}')">Delete</button></div></td></tr>`; }
+    function followups() {
+      const list = [...data.followups].sort((a, b) => { const sa = fuStatus(a) === 'done', sb = fuStatus(b) === 'done'; if (sa !== sb) return sa ? 1 : -1; return (a.date || '').localeCompare(b.date || ''); });
+      shell('Medical follow-ups', `<div class="panel"><div class="panel-head"><h3>Follow-up register</h3><button class="btn dark" onclick="addF()">+ Add follow-up</button></div><div class="table-wrap"><table class="table"><thead><tr><th>Resident</th><th>Date</th><th>Purpose</th><th>Note</th><th>Status</th><th></th></tr></thead><tbody>${list.map(f => fuRow(f, { withName: true })).join('') || '<tr><td colspan="6" class="empty">No follow-ups yet. Add doctor visits, check-ups, physiotherapy or medication reviews here.</td></tr>'}</tbody></table></div></div>`);
+    }
+    function addF(residentId = null, editId = null) {
+      const f = editId ? data.followups.find(x => x.id === editId) : { residentId: residentId || '', date: today(), status: 'Pending' };
+      if (!active().length && !editId) { toast('Add a resident first'); return; }
+      const opts = active().map(r => ({ v: r.id, t: r.name })); if (f.residentId && !opts.some(o => o.v === f.residentId)) opts.push({ v: f.residentId, t: resName(f.residentId) || 'Archived resident' });
+      shell(editId ? 'Edit follow-up' : 'Add follow-up', `<div class="panel"><form id="ff"><div class="form-grid">${selectField('residentId', 'Resident', f.residentId, opts)}${field('date', 'Date', f.date, 'date', '', 'required')}${field('purpose', 'Purpose (doctor visit, blood test, physiotherapy…)', f.purpose, 'text', '', 'required')}${selectField('status', 'Status', f.status || 'Pending', [{ v: 'Pending', t: 'Pending' }, { v: 'Done', t: 'Done' }])}${field('note', 'Notes / outcome', f.note, 'textarea', 'full-field')}</div><div class="form-actions"><button class="btn dark">${editId ? 'Save changes' : 'Save follow-up'}</button><button type="button" class="mini-btn" onclick="${residentId ? `editR('${residentId}')` : "renderWS('followups')"}">Cancel</button></div></form></div>`);
+      $('#ff').onsubmit = e => {
+        e.preventDefault(); const v = Object.fromEntries(new FormData(e.target)); v.id = editId || uid(); v.resident = resName(v.residentId);
+        if (editId) data.followups[data.followups.findIndex(x => x.id === editId)] = v; else data.followups.push(v);
+        save(`${editId ? 'Update' : 'Add'} follow-up for ${v.resident}`); toast('Follow-up saved'); residentId ? editR(residentId) : renderWS('followups');
+      };
+    }
+    function doneF(id) { const f = data.followups.find(x => x.id === id); if (!f) return; f.status = 'Done'; save(`Complete follow-up for ${f.resident}`); toast('Marked done'); rerender(); }
+    function delF(id) { const f = data.followups.find(x => x.id === id); if (!f || !confirm('Delete this follow-up?')) return; data.followups = data.followups.filter(x => x.id !== id); save(`Delete follow-up for ${f.resident}`); toast('Follow-up deleted'); rerender(); }
+    function rerender() { renderWS(current.page, current.arg); }
+
+    function beds() {
+      shell('Rooms & beds', `<div class="panel"><div class="panel-head"><h3>Bed register</h3><span class="pill">${data.beds.filter(b => b.status === 'Available').length} available of ${data.beds.length}</span></div><div class="table-wrap"><table class="table"><thead><tr><th>Room</th><th>Bed</th><th>Status</th><th>Resident</th><th></th></tr></thead><tbody>${data.beds.map(b => `<tr><td><b>${esc(b.room)}</b></td><td>${esc(b.bed)}</td><td><span class="pill ${b.status === 'Available' ? 'done' : 'pending'}">${esc(b.status)}</span></td><td>${esc(b.resident || '—')}</td><td><div class="row-actions"><button class="mini-btn" onclick="toggleBed('${b.id}')">${b.status === 'Available' ? 'Mark occupied' : 'Mark available'}</button><button class="mini-btn danger" onclick="delBed('${b.id}')">Remove</button></div></td></tr>`).join('') || '<tr><td colspan="5" class="empty">No beds yet.</td></tr>'}</tbody></table></div></div>
+  <div class="panel"><h3>Add a bed</h3><form id="bedForm"><div class="form-grid">${field('room', 'Room', '', 'text', '', 'required placeholder="A-03"')}${field('bed', 'Bed number', '', 'text', '', 'required placeholder="1"')}</div><div class="form-actions"><button class="btn dark">Add bed</button></div></form></div>`);
+      $('#bedForm').onsubmit = e => { e.preventDefault(); const v = Object.fromEntries(new FormData(e.target)); if (data.beds.some(b => b.room === v.room.trim() && b.bed === v.bed.trim())) return toast('That bed already exists'); data.beds.push({ id: uid(), room: v.room.trim(), bed: v.bed.trim(), status: 'Available', resident: '' }); save(`Add bed ${v.room} / ${v.bed}`); toast('Bed added'); renderWS('beds'); };
+    }
+    function toggleBed(id) { const b = data.beds.find(x => x.id === id); if (!b) return; b.status = b.status === 'Available' ? 'Occupied' : 'Available'; if (b.status === 'Available') b.resident = ''; save(`Mark bed ${b.room}/${b.bed} ${b.status.toLowerCase()}`); renderWS('beds'); }
+    function delBed(id) { const b = data.beds.find(x => x.id === id); if (!b) return; if (b.status === 'Occupied' && !confirm('This bed is marked occupied. Remove it anyway?')) return; data.beds = data.beds.filter(x => x.id !== id); save(`Remove bed ${b.room}/${b.bed}`); renderWS('beds'); }
+
+    function recordText(r) {
+      const fus = data.followups.filter(f => f.residentId === r.id).sort((a, b) => (a.date || '').localeCompare(b.date || ''));
+      return `MAANAVTA HITAAY SEVA CHATRA\nRESIDENT RECORD\n\nName: ${r.name}\nDate of birth: ${r.dob || '—'}${r.dob ? ` (age ${age(r.dob)})` : ''}\nGender: ${r.gender || '—'}\nAdmission date: ${r.admitted || '—'}\nRoom / bed: ${r.room || '—'}\nID document: ${r.aadhaar || '—'}\nBlood group: ${r.blood || '—'}\n\nFamily / close contact: ${r.contact || '—'}\nRelationship: ${r.contactRelation || '—'}\nContact number: ${r.contactPhone || '—'}\nAlternate number: ${r.contactPhone2 || '—'}\nAddress: ${r.address || '—'}\n\nMedical note: ${r.medical || '—'}\nMedication notes: ${r.medications || '—'}\nTreating doctor / hospital: ${r.doctor || '—'}\nEmergency instructions: ${r.emergency || '—'}\nAdditional information: ${r.notes || '—'}\n\nFOLLOW-UPS\n${fus.length ? fus.map(f => `${f.date || '—'}  ${f.purpose}  [${f.status}]${f.note ? '  — ' + f.note : ''}`).join('\n') : '—'}\n\nPrinted ${new Date().toLocaleString('en-IN')}`;
+    }
+    function documents() {
+      shell('Documents', `<div class="panel"><h3>Copy a resident record</h3><p class="muted-p">Select a resident and copy a formatted record to paste into Google Docs, WhatsApp or a printed file.</p><div class="search"><select id="docResident"><option value="">Select resident</option>${active().map(r => `<option value="${r.id}">${esc(r.name)}</option>`).join('')}</select><button class="btn dark" onclick="copyDoc()">Copy record</button><button class="mini-btn" onclick="printDoc()">Print</button></div></div><div class="panel"><h3>Suggested document set</h3><p class="muted-p">Admission record · Family contacts · Medical notes · Follow-up log · Room/bed record · Documents checklist (ID proof, medical reports, consent form, photographs).</p></div>`);
+    }
+    function copyDoc() { const r = data.residents.find(x => x.id === $('#docResident').value); if (!r) return toast('Choose a resident'); copyDocFor(r.id); }
+    function copyDocFor(id) { const r = data.residents.find(x => x.id === id); if (!r) return; navigator.clipboard.writeText(recordText(r)).then(() => toast('Record copied')).catch(() => toast('Could not copy')); }
+    function printDoc() { const r = data.residents.find(x => x.id === $('#docResident').value); if (!r) return toast('Choose a resident'); const w = window.open('', '_blank'); w.document.write(`<pre style="font:13px/1.6 Arial,sans-serif;white-space:pre-wrap;padding:24px">${esc(recordText(r))}</pre>`); w.document.close(); w.print(); }
+
+    function backup() {
+      shell('Backup & export', `<div class="panel"><h3>Where your records live</h3><p class="muted-p">Records are saved in your Firebase database (project <b>${esc(CONFIG.firebase.projectId)}</b>) and appear on every device you sign in from. Download a copy now and then as an extra safety net.</p><div class="form-actions"><a class="btn light" href="https://console.firebase.google.com/project/${encodeURIComponent(CONFIG.firebase.projectId)}/firestore" target="_blank" rel="noopener">Open database in Firebase ↗</a><button class="mini-btn" onclick="reloadRemote()">Reload from database</button></div></div>
+  <div class="panel"><h3>Download a copy</h3><div class="form-actions"><button class="btn dark" onclick="jsonBackup()">Download JSON backup</button><button class="mini-btn" onclick="csvBackup()">Export residents CSV</button><button class="mini-btn" onclick="csvFollowups()">Export follow-ups CSV</button></div></div>
+  <div class="panel"><h3>Restore from a JSON backup</h3><p class="muted-p">Replaces everything currently stored with the contents of the backup file. Use “Download JSON backup” first if you are unsure.</p><div class="form-actions"><input type="file" id="restoreFile" accept="application/json,.json"><button class="mini-btn danger" onclick="restoreJSON()">Restore</button></div></div>`);
+    }
+    function downloadBlob(b, n) { const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = n; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000); }
+    function jsonBackup() { downloadBlob(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }), `maanavta-records-${today()}.json`); }
+    const csvRows = rows => rows.map(row => row.map(v => `"${String(v ?? '').replaceAll('"', '""')}"`).join(',')).join('\n');
+    function csvBackup() { downloadBlob(new Blob(['\ufeff' + csvRows([['Name', 'DOB', 'Gender', 'Room', 'Admitted', 'Contact', 'Relation', 'Phone', 'Alt phone', 'Address', 'Medical', 'Medications', 'Doctor', 'Blood group', 'Emergency', 'Notes', 'Archived'], ...data.residents.map(r => [r.name, r.dob, r.gender, r.room, r.admitted, r.contact, r.contactRelation, r.contactPhone, r.contactPhone2, r.address, r.medical, r.medications, r.doctor, r.blood, r.emergency, r.notes, r.archived ? 'yes' : ''])])], { type: 'text/csv' }), `residents-${today()}.csv`); }
+    function csvFollowups() { downloadBlob(new Blob(['\ufeff' + csvRows([['Resident', 'Date', 'Purpose', 'Status', 'Note'], ...data.followups.map(f => [resName(f.residentId) || f.resident, f.date, f.purpose, f.status, f.note])])], { type: 'text/csv' }), `followups-${today()}.csv`); }
+    function restoreJSON() { const f = $('#restoreFile').files[0]; if (!f) return toast('Choose a backup file first'); if (!confirm('Replace all current records with this backup?')) return; f.text().then(t => { data = normalize(JSON.parse(t)); save('Restore records from backup'); toast('Backup restored'); renderWS('dashboard'); }).catch(() => toast('That file is not a valid backup')); }
+    async function reloadRemote() { if (DB.dirty || DB.saving) { await flush(); } try { setSync('busy', 'Loading…'); const remote = await DB.load(); if (remote) { data = normalize(remote); cacheLocal(); } setSync('ok', 'Synced'); toast('Reloaded'); renderWS('dashboard'); } catch (e) { setSync('err', 'Could not load'); toast(e.message); } }
+
+    function settings() {
+      shell('Account & storage', `<div class="panel"><h3>Signed in</h3><dl class="kv"><dt>Owner account</dt><dd>${esc((DB.user && DB.user.email) || '—')}</dd><dt>Database</dt><dd>Firebase project <a href="https://console.firebase.google.com/project/${encodeURIComponent(CONFIG.firebase.projectId)}" target="_blank" rel="noopener" style="text-decoration:underline">${esc(CONFIG.firebase.projectId)}</a></dd><dt>Stays signed in</dt><dd>Yes, on this device, until you sign out</dd></dl><div class="form-actions"><button class="mini-btn" onclick="changePass()">Change passcode</button><button class="mini-btn danger" onclick="signOut()">Sign out</button></div></div>
+  <div class="panel"><h3>How this works</h3><p class="muted-p">The website is hosted on GitHub Pages. Records are stored in your own Firebase database, and only the owner account can read or write them. Sign out on shared computers.</p></div>`);
+    }
+    async function changePass() {
+      const cur = prompt('Current passcode'); if (!cur) return;
+      const next = prompt('New passcode (at least 8 characters)'); if (!next) return; if (next.length < 8) return toast('Use at least 8 characters');
+      try {
+        const cred = firebase.auth.EmailAuthProvider.credential(DB.user.email, cur);
+        await DB.user.reauthenticateWithCredential(cred); await DB.user.updatePassword(next); toast('Passcode changed');
+      } catch (e) { toast(/wrong-password|invalid-credential/.test(e.code || '') ? 'Current passcode is incorrect' : (e.message || 'Could not change passcode')); }
+    }
+    Object.assign(window, { renderWS, editR, archiveR, filterR, addF, doneF, delF, toggleBed, delBed, copyDoc, copyDocFor, printDoc, jsonBackup, csvBackup, csvFollowups, restoreJSON, reloadRemote, signOut, openOwner, changePass });
+    try { DB.init(); } catch (e) { console.warn(e.message); }
+  </script>
+</body>
+
+</html>
